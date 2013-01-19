@@ -3,10 +3,16 @@ $def with (page)
 <html>
 <head>
     <style type="text/css">
-        .vote {
-            background: gray;
-            padding: 0px 10px;
-        }
+   @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+   body { font-family: 'Open Sans', sans-serif; }
+   h1 { border-bottom: 1px black solid; width: 800px; margin: 0 auto; margin-bottom: 10px; }
+   h1:after { content: '(ish)'; }
+   #posts { width: 800px; margin: 0 auto; }
+   button { margin: 0; }
+   .post button:last-child { margin-right: 5px; }
+   .post a:first-child { margin-left: 20px; }
+   .post { position: relative; }
+   .post a { position: absolute; left: 90px }
     </style>
 </head>
 <body>
