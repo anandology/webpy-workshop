@@ -1,0 +1,13 @@
+$def with (posts)
+<div id="posts">
+$for p in posts:
+    <div class="post">
+        <form method="POST" action="/$p.id/vote" 
+              style="display:inline">
+            <button type="submit" name="action" value="up">+</button>
+            <button type="submit" name="action" value="down">-</button>
+        </form>
+        $p.votes
+        <a href="$p.url">$p.title</a>
+    </div>
+</div>
