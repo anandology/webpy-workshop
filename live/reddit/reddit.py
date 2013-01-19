@@ -5,8 +5,8 @@ import web
 urls = (
     "/", "index",
     "/new", "newpost",
-    "/(.*)/vote", "vote",
-    "/(.*)", "post",
+    "/(\d+)/vote", "vote",
+    "/(\d+)", "post",
 )
 app = web.application(urls, globals())
 render = web.template.render("templates/")
